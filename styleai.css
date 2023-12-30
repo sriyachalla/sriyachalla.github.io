@@ -1,59 +1,88 @@
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+/* Reset some default browser styles */
+* {
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-    line-height: 1.6;
+    box-sizing: border-box;
 }
 
+/* Body and global styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f7f7;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Header styles */
 header {
-    background: linear-gradient(135deg, #6dd5ed, #2193b0);
-    color: white;
+    background-color: #333;
+    color: #fff;
     padding: 20px 0;
     text-align: center;
 }
 
 header h1 {
-    margin: 0;
-    font-size: 2.5rem;
+    font-size: 2.5em;
 }
 
+/* Container for the projects */
 .container {
-    width: 80%;
-    margin: auto;
-    overflow: hidden;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
 }
 
+/* Styles for each project */
 .project {
     background: #fff;
+    margin-bottom: 30px;
     padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
 
+.project h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Styles for the project images */
 .project img {
     display: block;
-    margin: 20px auto; /* Centers image and adds space */
-    max-width: 80%; /* Adjusts the maximum width to 80% of the parent */
-    height: auto; /* Maintains the aspect ratio */
+    width: 100%; /* Full width of the container */
+    max-width: 600px; /* Maximum width */
+    height: 300px; /* Fixed height */
+    object-fit: cover;
+    margin: 20px auto; /* Center the image */
+    border-radius: 4px;
 }
 
-.project h2, .project p {
-    text-align: center; /* Center-aligns text */
+/* Paragraph styles within projects */
+.project p {
+    font-size: 1em;
+    margin-bottom: 10px;
 }
 
+/* Styles for GitHub links */
 .project a {
     display: inline-block;
-    text-decoration: none;
-    color: #333;
-    background: #2193b0;
+    background: #007bff;
+    color: #fff;
     padding: 10px 15px;
-    border-radius: 5px;
-    color: white;
-    transition: background 0.3s ease;
+    margin-top: 10px;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background 0.3s ease-in-out;
 }
 
 .project a:hover {
-    background: #6dd5ed;
+    background: #0056b3;
+}
+
+/* Responsive image adjustments */
+@media (max-width: 768px) {
+    .project img {
+        width: 100%;
+        height: auto;
+    }
 }
