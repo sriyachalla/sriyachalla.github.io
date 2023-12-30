@@ -8,14 +8,15 @@
 /* Body and global styles */
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f7f7f7;
+    background-color: #008080; /* Teal green background */
     line-height: 1.6;
     color: #333;
+    padding-bottom: 30px; /* Space at the bottom */
 }
 
 /* Header styles */
 header {
-    background-color: #333;
+    background-color: #add8e6; /* Light blue header */
     color: #fff;
     padding: 20px 0;
     text-align: center;
@@ -23,6 +24,7 @@ header {
 
 header h1 {
     font-size: 2.5em;
+    margin: 0;
 }
 
 /* Container for the projects */
@@ -66,7 +68,7 @@ header h1 {
 /* Styles for GitHub links */
 .project a {
     display: inline-block;
-    background: #007bff;
+    background: #007bff; /* Blue color for buttons */
     color: #fff;
     padding: 10px 15px;
     margin-top: 10px;
@@ -76,7 +78,7 @@ header h1 {
 }
 
 .project a:hover {
-    background: #0056b3;
+    background: #0056b3; /* Darker blue on hover */
 }
 
 /* Responsive image adjustments */
