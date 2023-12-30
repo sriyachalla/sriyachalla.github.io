@@ -1,0 +1,80 @@
+/* Base styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #fff8dc; /* A soft, warm background color */
+    line-height: 1.6;
+    color: #333;
+    padding: 20px;
+}
+
+header {
+    background-color: #deb887; /* A light, earthy tone for the header */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+.intro p {
+    font-size: 1.2em;
+    margin: 20px;
+    text-align: center;
+}
+
+/* Main content and articles */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.blog-post {
+    width: 80%;
+    max-width: 800px;
+    background: #fdf5e6; /* A light background for posts for readability */
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.blog-post h2 {
+    font-size: 1.8em;
+    color: #8b4513; /* A warm color for headings */
+}
+
+.blog-post p {
+    font-size: 1em;
+    margin-bottom: 20px;
+}
+
+.blog-post a {
+    display: inline-block;
+    background: #8b4513; /* A warm color matching the headings */
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.blog-post a:hover {
+    background-color: #a0522d;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .blog-post {
+        width: 95%;
+    }
+}
