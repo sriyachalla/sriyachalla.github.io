@@ -8,7 +8,7 @@
 /* Body and global styles */
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #008080; /* Teal green background */
+    background-color: #f7f7f7; /* Light background for the content */
     line-height: 1.6;
     color: #333;
     padding-bottom: 30px; /* Space at the bottom */
@@ -16,7 +16,7 @@ body {
 
 /* Header styles */
 header {
-    background-color: #add8e6; /* Light blue header */
+    background-color: #004d40; /* Darker shade of teal for the header */
     color: #fff;
     padding: 20px 0;
     text-align: center;
