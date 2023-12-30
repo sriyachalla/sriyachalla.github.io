@@ -8,29 +8,38 @@
 /* Body and global styles */
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #008080; /* Teal green background */
+    background-color: #008080; /* Soft background for content */
     line-height: 1.6;
     color: #333;
-    padding-bottom: 30px; /* Space at the bottom */
 }
 
 /* Header styles */
 header {
     background-color: #004d40; /* Darker shade of teal for the header */
     color: #fff;
-    padding: 20px 0;
-    text-align: center;
+    padding: 20px 40px; /* Padding for spacing */
+    display: flex; /* Use flexbox to align items */
+    align-items: center; /* Align items vertically */
+    justify-content: space-between; /* Distributes space between and around content items */
 }
 
 header h1 {
     font-size: 2.5em;
-    margin: 0;
+    text-align: left; /* Aligns the header text to the left */
+    display: inline-block; /* Allows emojis to be inline with text */
+}
+
+/* Styles for emojis */
+header h1::after {
+    content: '🤖🔬💻'; /* Robotic-themed emojis */
+    font-size: 1.5em; /* Slightly larger emojis */
+    margin-left: 10px; /* Space between text and emojis */
 }
 
 /* Container for the projects */
 .container {
-    max-width: 1200px;
-    margin: 20px auto;
+    max-width: 1000px; /* Reduced maximum width */
+    margin: 20px 50px; /* Increased side margins for more space */
     padding: 20px;
 }
 
@@ -86,5 +95,9 @@ header h1 {
     .project img {
         width: 100%;
         height: auto;
+    }
+
+    .container {
+        margin: 20px; /* Adjust margins for smaller screens */
     }
 }
