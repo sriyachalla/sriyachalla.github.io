@@ -1,50 +1,59 @@
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #fff;
+    background-color: #f4f4f4;
+    line-height: 1.6;
 }
 
 header {
     background: linear-gradient(135deg, #6dd5ed, #2193b0);
     color: white;
-    padding: 20px;
+    padding: 20px 0;
     text-align: center;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 
-h1 {
+header h1 {
     margin: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    text-shadow: 2px 2px 4px #000000;
+    font-size: 2.5rem;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
 }
 
 .project {
-    border: 1px solid #ddd;
-    margin: 20px;
-    padding: 15px;
-}
-
-.project h2 {
-    color: #007bff;
-}
-
-.project p {
-    line-height: 1.6;
+    background: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
 .project img {
-    max-width: 100%;
-    height: auto;
+    display: block;
+    margin: 20px auto; /* Centers image and adds space */
+    max-width: 80%; /* Adjusts the maximum width to 80% of the parent */
+    height: auto; /* Maintains the aspect ratio */
 }
 
-a {
+.project h2, .project p {
+    text-align: center; /* Center-aligns text */
+}
+
+.project a {
     display: inline-block;
-    margin-top: 10px;
-    color: #007bff;
     text-decoration: none;
+    color: #333;
+    background: #2193b0;
+    padding: 10px 15px;
+    border-radius: 5px;
+    color: white;
+    transition: background 0.3s ease;
 }
 
-a:hover {
-    text-decoration: underline;
+.project a:hover {
+    background: #6dd5ed;
 }
